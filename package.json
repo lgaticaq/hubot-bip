@@ -1,6 +1,6 @@
 {
   "name": "hubot-bip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hubot script to get balance of bip card (Chile)",
   "main": "index.coffee",
   "scripts": {
