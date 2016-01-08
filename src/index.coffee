@@ -2,7 +2,7 @@
 #   Obtiene el saldo de una tarjeta bip
 #
 # Dependencies:
-#   "bip": "^1.1.0"
+#   "bip": "^1.2.1"
 #
 # Commands:
 #   hubot bip <number> -> Número: <numero>, Saldo: <saldo>, Fecha: <fecha>, Mensaje: <mensaje>

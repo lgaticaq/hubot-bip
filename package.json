@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/lgaticaq/hubot-bip#readme",
   "dependencies": {
-    "bip": "^1.1.0",
+    "bip": "^1.2.1",
     "moment": "^2.11.0"
   },
   "devDependencies": {
