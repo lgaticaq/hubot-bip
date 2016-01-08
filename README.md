@@ -14,7 +14,7 @@ Hubot script to get balance of bip card (Chile)
 npm i -S hubot-bip
 ```
 
-agregar `["hubot-bip"]` en `external-scripts.json`.
+add `["hubot-bip"]` to `external-scripts.json`.
 
 ## Example
 `hubot bip 111111111` -> `Número: <numero>, Saldo: <saldo>, Fecha: <fecha>, Mensaje: <mensaje>`
