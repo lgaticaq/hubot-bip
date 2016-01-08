@@ -14,7 +14,7 @@ bip = require("bip")
 moment = require("moment")
 
 module.exports = (robot) ->
-  robot.respond /bip (\d{8})/i, (res) ->
+  robot.respond /bip (\d+)/i, (res) ->
     bip(res.match[1])
       .then (data) ->
         msg = "Número: #{data.number}\n"
