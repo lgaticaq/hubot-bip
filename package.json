@@ -5,7 +5,8 @@
   "main": "index.coffee",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul",
-    "posttest": "istanbul report text-summary lcov"
+    "posttest": "istanbul report text-summary lcov",
+    "coveralls": "coveralls < coverage/lcov.info"
   },
   "engines": {
     "node": ">=4"
