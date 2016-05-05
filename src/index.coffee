@@ -5,7 +5,7 @@
 #   "bip": "^1.2.1"
 #
 # Commands:
-#   hubot bip <number> -> Número: <numero>, Saldo: <saldo>, Fecha: <fecha>, Mensaje: <mensaje>
+#   hubot bip <number> -> Obtiene saldo de tarjeta bip
 #
 # Author:
 #   lgaticaq
