@@ -65,5 +65,5 @@ describe "bip", ->
     it "should return a balance data (invalid)", ->
       expect(room.messages).to.eql([
         ["leon", "hubot bip #{number}"],
-        ["hubot", "Número: 11111111\nSaldo: $0\nMensaje: Esta tarjeta no se puede cargar"]
+        ["hubot", "@leon ocurrio un error al consultar la tarjeta bip"]
     ])
