@@ -2,18 +2,23 @@
   "name": "hubot-bip",
   "version": "2.0.0",
   "description": "Hubot script to get balance of bip card (Chile)",
-  "main": "index.coffee",
+  "main": "src",
   "scripts": {
+    "pretest": "coffeelint src test",
     "test": "mocha --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul",
     "posttest": "istanbul report text-summary lcov",
-    "coveralls": "coveralls < coverage/lcov.info"
+    "coveralls": "coveralls < coverage/lcov.info",
+    "codeclimate": "codeclimate-test-reporter < coverage/lcov.info",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags && npm publish",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags && npm publish",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags && npm publish"
   },
   "engines": {
     "node": ">=4"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/lgaticaq/hubot-bip.git"
+    "url": "https://github.com/lgaticaq/hubot-bip"
   },
   "keywords": [
     "hubot",
@@ -27,17 +32,19 @@
   },
   "homepage": "https://github.com/lgaticaq/hubot-bip#readme",
   "dependencies": {
-    "bip": "^2.0.0",
-    "moment": "^2.13.0"
+    "bip": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "codeclimate-test-reporter": "^0.4.0",
     "coffee-coverage": "^1.0.1",
-    "coffee-script": "^1.10.0",
-    "coveralls": "^2.11.9",
-    "hubot-test-helper": "^1.4.4",
-    "istanbul": "^0.4.3",
-    "mocha": "^3.0.0",
-    "nock": "^9.0.0"
+    "coffee-script": "^1.11.1",
+    "coffeelint": "^1.16.0",
+    "coveralls": "^2.11.15",
+    "generate-changelog": "^1.0.2",
+    "hubot-test-helper": "^1.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "proxyquire": "^1.7.10"
   }
 }
