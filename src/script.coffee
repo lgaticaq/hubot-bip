@@ -23,7 +23,7 @@ module.exports = (robot) ->
         msg = "Número: #{data.number}\n"
         msg += "Saldo: $#{data.balance}\n"
         if data.date
-          hour = addZero(data.date.getHours())
+          hour = addZero(data.date.getUTCHours() - 3)
           date = data.date.toISOString().replace(
             /(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):\d{2}\.\d+Z/,
             "$3/$2/$1 #{hour}:$5")
