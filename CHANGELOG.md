@@ -1,3 +1,9 @@
+#### 2.0.2 (2016-11-27)
+
+##### Bug Fixes
+
+* **date:** Fix parse timezone ([a109468c](https://github.com/lgaticaq/hubot-bip/commit/a109468cef04bdee0a7d8e0dae7212981b70e256))
+
 #### 2.0.1 (2016-11-27)
 
 ##### Chores
