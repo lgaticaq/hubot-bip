@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/lgaticaq/hubot-bip#readme",
   "dependencies": {
-    "bip": "^2.0.1"
+    "bip": "^3.0.0"
   },
   "devDependencies": {
     "chai": "4.3.4",
